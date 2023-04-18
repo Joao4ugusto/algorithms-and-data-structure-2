@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 struct float_vector {
     int capacity; // num máximo de elementos
     int size; // qtde de elementos armazenados atualmente
     float *data;  // vetor de floats
 };
-
 
 /**
  * @brief Cria (aloca) um vetor de floats com uma dada capacidade.
@@ -25,7 +23,6 @@ FloatVector *create(int capacity) {
     return vec;
 }
 
-
 void destroy(FloatVector **vec_ref) {
     FloatVector *vec = *vec_ref;
 
@@ -33,7 +30,6 @@ void destroy(FloatVector **vec_ref) {
     free(vec);
     *vec_ref = NULL;
 }
-
 
 void append(FloatVector *vec, float val) {
     if (vec->size == vec->capacity) {

@@ -1,4 +1,3 @@
-
 typedef struct float_vector FloatVector;
 
 FloatVector *create(int capacity);
@@ -10,3 +9,5 @@ float get(const FloatVector *vec, int index);
 void append(FloatVector *vec, float val);
 void set(FloatVector *vec, int index, float val);
 void print(const FloatVector *vec);
+
+
