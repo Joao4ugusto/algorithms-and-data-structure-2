@@ -32,7 +32,5 @@ int main(){
     l[1] = inicializa(l[1], "sei la 2", "Joao augusto", 2000);
     l[2] = inicializa(l[2], "sei la 3", "Joao oliveira", 2002);
 
-    if(int i = 0; i < 3; i++){
-        printf_livro(&l[i]);
-    }
+   
 }
