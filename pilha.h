@@ -44,6 +44,7 @@ int topo_pilha(Pilha *pilha) {
     return pilha->memoria[pilha->topo-1];
 }
 
+
 void inverte_pilha(Pilha *pilha) {
     Pilha pilha_auxiliar;
     inicializa_pilha(&pilha_auxiliar);
@@ -60,3 +61,5 @@ void inverte_pilha(Pilha *pilha) {
         empilha(pilha, elemento);
     }
 }
+
+
