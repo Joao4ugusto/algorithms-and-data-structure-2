@@ -17,9 +17,9 @@ int main(){
     }
     printf("\n");
 
-    empilhar(&pilha, 1);
-    empilhar(&pilha, 2);
-    empilhar(&pilha, 3);
+    // empilhar(&pilha, 1);
+    // empilhar(&pilha, 2);
+    // empilhar(&pilha, 3);
 
     inverter(&pilha);
 
@@ -28,5 +28,6 @@ int main(){
     printf("%d ", desempilhar(&pilha));
     }
     printf("\n");
+    
     return 0;
 }

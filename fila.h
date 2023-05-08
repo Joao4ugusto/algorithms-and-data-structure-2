@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #define TAM 5
 
 typedef struct{
@@ -7,7 +10,7 @@ typedef struct{
     int qtd;
 } fila;
 
-void inicialize_fila(fila *f){
+void inicializa_fila(fila *f){
     f->fim = f->inicio = f->qtd = 0;
 }
 
@@ -35,22 +38,20 @@ void enfileira(fila *f, int elemento){
 }
 
 void desenfileira(fila *f){
-if(!fila_vazia(f)){
-    f->qtd--;
-    f->inicio++;
-    if(f->inicio == TAM){
-        f->inicio = 0;
+    if(!fila_vazia(f)){
+        f->qtd--;
+        f->inicio++;
+        if(f->inicio == TAM){
+            f->inicio = 0;
+        }
     }
 }
-}
 
-int inicio_fila(Fila *f){
+int inicio_fila(fila *f){
     if(!fila_vazia(f)){
         return f->memoria[f->inicio];
     }
+    return -1;
 }
-
-
-
 
 

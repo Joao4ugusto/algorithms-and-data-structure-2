@@ -1,10 +1,12 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include"fila.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "fila.h"
+
+
 int main(void){
     fila a;
     int opcao, elemento;
-    inicialize_fila(&a);
+    inicializa_fila(&a);
     while(1){
         printf("FILA: 1-Enfileirar 2-Desenfileirar 3-Topo 4-Inverte 0-Sair: \n");
         printf("Opcao: ");
@@ -27,17 +29,16 @@ int main(void){
                 printf("Fila Vazia\n");
             }
             else{
-                printf("O Elemento %d sera desenfileirado\n", fim_fila(&a));
+                printf("O Elemento %d sera desenfileirado\n", inicio_fila(&a));
                 desenfileira(&a);
             }
         }
         if(opcao==3){
-            if(fila_vazia (&a))
-            printf("fila vazia");
+            if(fila_vazia(&a))
+                printf("Fila vazia\n");
             else
-            printf("inicio = %d\n", fim_fila(&a));
+                printf("Inicio: %d\n", inicio_fila(&a));
         }
     }
+    return 0;
 }
-
-
