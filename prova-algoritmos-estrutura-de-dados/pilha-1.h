@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 #define TAM_MAX 10
 
 typedef struct {

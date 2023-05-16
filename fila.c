@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "fila.h"
 
-
 int main(void){
     fila a;
     int opcao, elemento;
@@ -42,3 +41,5 @@ int main(void){
     }
     return 0;
 }
+
+
